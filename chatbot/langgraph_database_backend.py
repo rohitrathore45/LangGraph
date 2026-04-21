@@ -9,7 +9,7 @@ import sqlite3
 
 load_dotenv()
 
-llm = ChatGoogleGenerativeAI()
+llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite")
 
 class ChatState(TypedDict):
     messages: Annotated[list[BaseMessage], add_messages]
